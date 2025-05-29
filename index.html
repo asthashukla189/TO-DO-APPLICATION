@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do Pro by Astha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>📝 Astha's To-Do Pro</h1>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="What do you need to do?" />
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <div class="filter-buttons">
+      <button onclick="filterTasks('all')" class="active">All</button>
+      <button onclick="filterTasks('active')">Active</button>
+      <button onclick="filterTasks('completed')">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <audio id="clickSound" src="https://www.fesliyanstudios.com/play-mp3/4386" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
